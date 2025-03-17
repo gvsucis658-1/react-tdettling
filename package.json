@@ -4,16 +4,16 @@
   "private": true,
 "scripts": {
   "dev": "next dev",
-  "build": "cd inventory-app && npm run build",
+  "build": "react-scripts build",
   "heroku-postbuild": "cd inventory-app && npm install && npm run build", 
   "postinstall": "next build",
-  "start": "cd inventory-app && npm start",
+  "start": "serve -s build",
   "lint": "next lint"
 },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.2.0"
+    "react-scripts": "5.0.1"
   },
   "devDependencies": {
     "typescript": "^5",
